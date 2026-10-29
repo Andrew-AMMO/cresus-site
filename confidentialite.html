@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : octobre 2026 (ajout de l'agenda et de Google Drive).</p>
+<p>Dernière mise à jour : octobre 2026 (création de rendez-vous, comptes rendus de réunion, relances et justificatifs).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -26,11 +26,24 @@ connecter.</p>
       afin d'en produire des résumés, d'identifier les priorités et les tâches.</li>
   <li>Les brouillons de réponse, que Cresus peut créer à la demande du propriétaire.
       Cresus n'envoie aucun e-mail : l'envoi est toujours effectué par le propriétaire lui-même.</li>
-  <li>Les événements de l'agenda Google du propriétaire (titre, horaires, lieu, participants),
-      en lecture seule, afin de préparer son briefing quotidien. Cresus ne crée ni ne modifie
-      aucun événement.</li>
+  <li>Les événements de l'agenda Google du propriétaire (titre, horaires, lieu, participants), afin de
+      préparer son briefing et de répondre à ses questions. Cresus peut créer un rendez-vous uniquement à
+      la demande du propriétaire et après sa validation explicite ; il ne modifie ni ne supprime aucun
+      événement existant.</li>
+  <li>Les e-mails envoyés par le propriétaire restés sans réponse (destinataire, objet, extrait), afin de
+      lui proposer des relances, et la recherche de factures dans ses e-mails pour retrouver les
+      justificatifs de ses dépenses. Aucun e-mail n'est envoyé par Cresus.</li>
+  <li>Les comptes rendus de réunion Google Meet (« notes Gemini ») présents dans son Google Drive, afin
+      d'en extraire les décisions et les actions qui le concernent.</li>
   <li>Les documents Google Drive que le propriétaire choisit de lui faire lire, en lecture seule,
       afin d'en produire des synthèses. Cresus ne modifie ni ne supprime aucun fichier.</li>
+  <li>Les documents OneDrive (Microsoft) des dossiers que le propriétaire choisit de surveiller, en
+      lecture seule ; chaque document n'est lu qu'après son accord explicite.</li>
+  <li>Les soldes et opérations des comptes bancaires Qonto des sociétés du propriétaire (date,
+      montant, libellé, catégorie), en lecture seule, afin de suivre la trésorerie. Cresus ne peut
+      effectuer aucun paiement ni virement ; les IBAN et clés d'accès ne sont jamais transmis à
+      l'intelligence artificielle. Pour les autres comptes, le propriétaire envoie lui-même ses
+      relevés (fichiers) ; seuls la date, le montant et le libellé des opérations en sont conservés.</li>
 </ul>
 
 <h2>3. Utilisation des données</h2>
@@ -49,7 +62,8 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
 <h2>5. Conservation et sécurité</h2>
 <p>Les e-mails ne sont pas archivés. Seuls les e-mails auxquels le propriétaire peut vouloir répondre
 sont conservés temporairement, 14 jours au maximum, le temps de préparer la réponse ; ils sont
-ensuite supprimés automatiquement. Le serveur est protégé par un accès par clé, un pare-feu et des
+ensuite supprimés automatiquement. Les opérations bancaires sont conservées sur le serveur pour
+établir les synthèses mensuelles. Le serveur est protégé par un accès par clé, un pare-feu et des
 mises à jour de sécurité automatiques.</p>
 
 <h2>6. Données des API Google</h2>
