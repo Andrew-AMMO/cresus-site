@@ -23,17 +23,23 @@ connecter.</p>
 <h2>2. Données consultées</h2>
 <ul>
   <li>Les e-mails reçus sur les comptes Gmail de leur propriétaire (expéditeur, objet, date, contenu),
-      afin d'en produire des résumés, d'identifier les priorités et les tâches.</li>
+      afin d'en produire des résumés, d'identifier les priorités et les tâches, de lui afficher ses e-mails
+      non lus dans son tableau de bord et d'y faire les recherches qu'il demande.</li>
   <li>Les brouillons de réponse, que Cresus peut créer à la demande du propriétaire.
-      Cresus n'envoie aucun e-mail : l'envoi est toujours effectué par le propriétaire lui-même.</li>
+      Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même.</li>
   <li>Les événements de l'agenda Google du propriétaire (titre, horaires, lieu, participants), afin de
-      préparer son briefing et de répondre à ses questions. Cresus peut créer un rendez-vous uniquement à
+      préparer son briefing, de répondre à ses questions et de lui envoyer, avant chaque réunion, une fiche de
+      préparation (participants et derniers e-mails échangés avec eux). Cresus peut créer un rendez-vous uniquement à
       la demande du propriétaire et après sa validation explicite ; il ne modifie ni ne supprime aucun
       événement existant.</li>
   <li>Les e-mails envoyés par le propriétaire restés sans réponse (destinataire, objet, extrait), afin de
       lui proposer des relances, et la recherche de factures dans ses e-mails pour retrouver les
       justificatifs de ses dépenses. À la demande du propriétaire, ces factures peuvent être jointes à un
-      brouillon destiné à son comptable ; c'est le propriétaire qui l'envoie. Aucun e-mail n'est envoyé par Cresus.</li>
+      e-mail destiné à son comptable. Seule exception à la règle « Cresus n'envoie aucun e-mail », décidée
+      expressément par le propriétaire : l'envoi de ces justificatifs depuis andrew@ammo.re vers son comptable
+      (angelo@ammo.re), en plusieurs e-mails si leur taille l'exige, sans jamais renvoyer une facture déjà
+      transmise. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages ; aucun
+      autre e-mail n'est envoyé par Cresus.</li>
   <li>Les messages Google Chat des comptes professionnels du propriétaire (auteur, date, texte), en lecture
       seule, afin de lui résumer les échanges avec ses équipes et les demandes qui l'attendent. Ces messages ne
       sont pas conservés : ils sont lus au moment du résumé. Cresus n'envoie aucun message.</li>
@@ -72,8 +78,9 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
 sont conservés temporairement, 14 jours au maximum, le temps de préparer la réponse ; ils sont
 ensuite supprimés automatiquement. Les opérations bancaires sont conservées sur le serveur pour
 établir les synthèses mensuelles. Les résumés produits par Cresus (briefings, résumés de conversations) ne
-sont conservés que 14 jours ; le texte des brouillons de réponse est effacé après 30 jours. Seuls les 60 derniers
-messages échangés avec Cresus (dans Telegram ou son tableau de bord) sont gardés, pour la continuité de la conversation. Les messages vocaux
+sont conservés que 14 jours ; le texte des brouillons de réponse est effacé après 30 jours. Le fil de
+la conversation avec Cresus (Telegram et tableau de bord) ne garde que les 150 derniers messages ; pour la continuité de
+l'échange, l'assistant n'en relit que les 12 derniers. Les messages vocaux
 envoyés à Cresus sont transcrits sur son propre serveur, sans service tiers, et ne sont pas conservés. Le tableau de bord n'est accessible qu'au propriétaire : depuis Telegram (signature vérifiée), ou dans son
 navigateur après un lien personnel à usage unique valable 5 minutes, qui ouvre une session de 30 jours au plus,
 révocable à tout moment. Le serveur est protégé par un accès par clé, un pare-feu et des
