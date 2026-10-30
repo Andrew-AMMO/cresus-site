@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : octobre 2026 (Google Chat, durées de conservation, rendez-vous, comptes rendus, relances et justificatifs).</p>
+<p>Dernière mise à jour : novembre 2026 (sauvegarde chiffrée sur OneDrive, budget et abonnements, relances de créances, créneaux de travail ; précédemment : envoi des justificatifs au comptable, e-mails non lus dans le tableau de bord, préparation des réunions).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -29,9 +29,9 @@ connecter.</p>
       Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même.</li>
   <li>Les événements de l'agenda Google du propriétaire (titre, horaires, lieu, participants), afin de
       préparer son briefing, de répondre à ses questions et de lui envoyer, avant chaque réunion, une fiche de
-      préparation (participants et derniers e-mails échangés avec eux). Cresus peut créer un rendez-vous uniquement à
-      la demande du propriétaire et après sa validation explicite ; il ne modifie ni ne supprime aucun
-      événement existant.</li>
+      préparation (participants et derniers e-mails échangés avec eux). Cresus peut créer un rendez-vous (y compris
+      un créneau de travail qu'il propose dans une plage libre) uniquement après la validation explicite du
+      propriétaire ; il ne modifie ni ne supprime aucun événement existant.</li>
   <li>Les e-mails envoyés par le propriétaire restés sans réponse (destinataire, objet, extrait), afin de
       lui proposer des relances, et la recherche de factures dans ses e-mails pour retrouver les
       justificatifs de ses dépenses. À la demande du propriétaire, ces factures peuvent être jointes à un
@@ -48,14 +48,21 @@ connecter.</p>
   <li>Les documents Google Drive que le propriétaire choisit de lui faire lire, en lecture seule,
       afin d'en produire des synthèses. Cresus ne modifie ni ne supprime aucun fichier.</li>
   <li>Les documents OneDrive (Microsoft) des dossiers que le propriétaire choisit de surveiller, en
-      lecture seule ; chaque document n'est lu qu'après son accord explicite.</li>
+      lecture seule ; chaque document n'est lu qu'après son accord explicite. Cresus n'écrit dans le OneDrive du
+      propriétaire que dans le dossier réservé à l'application (« Applications/Cresus »), pour y déposer sa
+      sauvegarde chiffrée.</li>
   <li>Les soldes et opérations des comptes bancaires Qonto des sociétés du propriétaire (date,
       montant, libellé, catégorie), en lecture seule, afin de suivre la trésorerie. Cresus ne peut
       effectuer aucun paiement ni virement ; les IBAN et clés d'accès ne sont jamais transmis à
       l'intelligence artificielle. Pour les autres comptes (Crédit Agricole, Revolut), le propriétaire
       peut autoriser, auprès de sa banque, un accès en lecture seule via le prestataire agréé Enable Banking,
       pour une durée limitée et révocable ; à défaut, il envoie lui-même ses relevés (fichiers). Seuls le
-      solde, la date, le montant et le libellé des opérations sont conservés.</li>
+      solde, la date, le montant et le libellé des opérations sont conservés. Ces opérations servent aussi à
+      établir son budget personnel par catégorie, à repérer ses abonnements et à lui signaler les anomalies
+      (doublons, montants inhabituels), par des règles simples exécutées sur le serveur.</li>
+  <li>Le registre des dettes, créances et comptes courants que le propriétaire tient avec Cresus. À sa
+      demande, Cresus prépare des brouillons de relance pour les personnes qui lui doivent de l'argent ; ces
+      brouillons ne sont envoyés que par le propriétaire lui-même.</li>
 </ul>
 
 <h2>3. Utilisation des données</h2>
@@ -71,6 +78,8 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
       comptes agréé : accès en lecture seule aux comptes bancaires que le propriétaire a autorisés.</li>
   <li>Hetzner Online GmbH (Allemagne, Union européenne) : hébergement du serveur.</li>
   <li>Telegram : canal de communication entre Cresus et son propriétaire.</li>
+  <li>Microsoft (OneDrive) : stockage, dans le compte du propriétaire, d'une copie de sauvegarde hebdomadaire
+      chiffrée de la mémoire de Cresus ; Microsoft ne peut pas la lire.</li>
 </ul>
 
 <h2>5. Conservation et sécurité</h2>
@@ -83,8 +92,10 @@ la conversation avec Cresus (Telegram et tableau de bord) ne garde que les 150 d
 l'échange, l'assistant n'en relit que les 12 derniers. Les messages vocaux
 envoyés à Cresus sont transcrits sur son propre serveur, sans service tiers, et ne sont pas conservés. Le tableau de bord n'est accessible qu'au propriétaire : depuis Telegram (signature vérifiée), ou dans son
 navigateur après un lien personnel à usage unique valable 5 minutes, qui ouvre une session de 30 jours au plus,
-révocable à tout moment. Le serveur est protégé par un accès par clé, un pare-feu et des
-mises à jour de sécurité automatiques.</p>
+révocable à tout moment, appareil par appareil. Le serveur est protégé par un accès par clé, un pare-feu et des
+mises à jour de sécurité automatiques. Chaque semaine, une copie de la mémoire de Cresus, chiffrée, est déposée
+dans le OneDrive du propriétaire (huit semaines conservées) ; la clé de déchiffrement reste sur le serveur et chez
+le propriétaire.</p>
 
 <h2>6. Données des API Google</h2>
 <p>L'utilisation et le transfert vers toute autre application des informations reçues des API Google
