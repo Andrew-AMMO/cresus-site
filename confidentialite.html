@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : novembre 2026 (sauvegarde chiffrée sur OneDrive, budget et abonnements, relances de créances, créneaux de travail ; précédemment : envoi des justificatifs au comptable, e-mails non lus dans le tableau de bord, préparation des réunions).</p>
+<p>Dernière mise à jour : novembre 2026 (application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire ; précédemment : sauvegarde chiffrée sur OneDrive, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -38,7 +38,9 @@ connecter.</p>
       e-mail destiné à son comptable. Seule exception à la règle « Cresus n'envoie aucun e-mail », décidée
       expressément par le propriétaire : l'envoi de ces justificatifs depuis andrew@ammo.re vers son comptable
       (angelo@ammo.re), en plusieurs e-mails si leur taille l'exige, sans jamais renvoyer une facture déjà
-      transmise. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages ; aucun
+      transmise. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages. Seule
+      autre exception : le lien de connexion de secours, envoyé uniquement à l'adresse personnelle du propriétaire
+      (andrew@v2agroup.com, fixée dans la configuration et jamais saisie sur la page) lorsqu'il le demande. Aucun
       autre e-mail n'est envoyé par Cresus.</li>
   <li>Les messages Google Chat des comptes professionnels du propriétaire (auteur, date, texte), en lecture
       seule, afin de lui résumer les échanges avec ses équipes et les demandes qui l'attendent. Ces messages ne
@@ -77,7 +79,11 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
   <li>Enable Banking Oy (Finlande, Union européenne), prestataire de services d'information sur les
       comptes agréé : accès en lecture seule aux comptes bancaires que le propriétaire a autorisés.</li>
   <li>Hetzner Online GmbH (Allemagne, Union européenne) : hébergement du serveur.</li>
-  <li>Telegram : canal de communication entre Cresus et son propriétaire.</li>
+  <li>Telegram : canal de communication de secours entre Cresus et son propriétaire (tout, urgences seulement ou
+      coupé, au choix du propriétaire).</li>
+  <li>Services de notification des navigateurs (Google pour Chrome et Android, Microsoft pour Edge) : ils
+      acheminent les notifications de l'application installée vers les appareils du propriétaire. Le contenu est
+      chiffré de bout en bout pour chaque appareil : ces services le transportent sans pouvoir le lire.</li>
   <li>Microsoft (OneDrive) : stockage, dans le compte du propriétaire, d'une copie de sauvegarde hebdomadaire
       chiffrée de la mémoire de Cresus ; Microsoft ne peut pas la lire.</li>
 </ul>
@@ -90,9 +96,16 @@ ensuite supprimés automatiquement. Les opérations bancaires sont conservées s
 sont conservés que 14 jours ; le texte des brouillons de réponse est effacé après 30 jours. Le fil de
 la conversation avec Cresus (Telegram et tableau de bord) ne garde que les 150 derniers messages ; pour la continuité de
 l'échange, l'assistant n'en relit que les 12 derniers. Les messages vocaux
-envoyés à Cresus sont transcrits sur son propre serveur, sans service tiers, et ne sont pas conservés. Le tableau de bord n'est accessible qu'au propriétaire : depuis Telegram (signature vérifiée), ou dans son
-navigateur après un lien personnel à usage unique valable 5 minutes, qui ouvre une session de 30 jours au plus,
-révocable à tout moment, appareil par appareil. Le serveur est protégé par un accès par clé, un pare-feu et des
+envoyés à Cresus sont transcrits sur son propre serveur, sans service tiers, et ne sont pas conservés. Le tableau de bord (aussi installable comme une application sur
+le téléphone et l'ordinateur du propriétaire) n'est accessible qu'au propriétaire : depuis Telegram (signature vérifiée),
+avec une clé d'accès propre à chacun de ses appareils (empreinte ou Windows Hello : la clé secrète ne quitte jamais
+l'appareil, le serveur n'en garde que la partie publique), ou par un lien personnel à usage unique valable 5 minutes.
+Chaque connexion ouvre une session de 30 jours au plus, révocable à tout moment, appareil par appareil ; les essais
+sont limités à 5 par heure, et chaque nouvelle connexion est signalée au propriétaire. Après une absence (délai choisi par le
+propriétaire), l'application se verrouille : le serveur ne rend plus aucune donnée tant que la clé d'accès n'a pas
+été présentée de nouveau. L'application peut garder
+sur l'appareil une copie des dernières données affichées, pour une consultation hors connexion ; elle est effacée
+à la déconnexion. Le serveur est protégé par un accès par clé, un pare-feu et des
 mises à jour de sécurité automatiques. Chaque semaine, une copie de la mémoire de Cresus, chiffrée, est déposée
 dans le OneDrive du propriétaire (huit semaines conservées) ; la clé de déchiffrement reste sur le serveur et chez
 le propriétaire.</p>
