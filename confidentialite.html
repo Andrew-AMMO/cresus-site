@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : novembre 2026 (application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire ; précédemment : sauvegarde chiffrée sur OneDrive, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
+<p>Dernière mise à jour : 1er novembre 2026 (sauvegarde chiffrée chaque nuit et remise en place depuis l'ordinateur du propriétaire, masquage des numéros sensibles avant tout envoi à l'intelligence artificielle, assistants spécialisés de l'Équipe ; précédemment : application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -26,7 +26,9 @@ connecter.</p>
       afin d'en produire des résumés, d'identifier les priorités et les tâches, de lui afficher ses e-mails
       non lus dans son tableau de bord et d'y faire les recherches qu'il demande.</li>
   <li>Les brouillons de réponse, que Cresus peut créer à la demande du propriétaire.
-      Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même.</li>
+      Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même. Cresus
+      n'envoie que deux sortes d'e-mails, décrites plus bas : les justificatifs destinés au comptable et le lien
+      de connexion de secours adressé au propriétaire lui-même.</li>
   <li>Les événements de l'agenda Google du propriétaire (titre, horaires, lieu, participants), afin de
       préparer son briefing, de répondre à ses questions et de lui envoyer, avant chaque réunion, une fiche de
       préparation (participants et derniers e-mails échangés avec eux). Cresus peut créer un rendez-vous (y compris
@@ -34,11 +36,13 @@ connecter.</p>
       propriétaire ; il ne modifie ni ne supprime aucun événement existant.</li>
   <li>Les e-mails envoyés par le propriétaire restés sans réponse (destinataire, objet, extrait), afin de
       lui proposer des relances, et la recherche de factures dans ses e-mails pour retrouver les
-      justificatifs de ses dépenses. À la demande du propriétaire, ces factures peuvent être jointes à un
-      e-mail destiné à son comptable. Seule exception à la règle « Cresus n'envoie aucun e-mail », décidée
-      expressément par le propriétaire : l'envoi de ces justificatifs depuis andrew@ammo.re vers son comptable
-      (angelo@ammo.re), en plusieurs e-mails si leur taille l'exige, sans jamais renvoyer une facture déjà
-      transmise. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages. Seule
+      justificatifs de ses dépenses (montrées au propriétaire seul). Les factures à transmettre au comptable ne
+      sont cherchées que dans les boîtes professionnelles du propriétaire, jamais dans ses e-mails envoyés. À la
+      demande du propriétaire, ces factures peuvent être jointes à un e-mail destiné à son comptable. Seule exception à la règle « Cresus n'envoie aucun e-mail », décidée expressément par le
+      propriétaire : l'envoi de ces justificatifs depuis andrew@ammo.re vers son comptable (angelo@ammo.re), en
+      plusieurs e-mails si leur taille l'exige, sans jamais renvoyer une facture déjà transmise. Ne partent
+      automatiquement que les factures dont le montant et le fournisseur figurent dans l'e-mail retrouvé ; une
+      facture incertaine est d'abord montrée au propriétaire, qui décide. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages. Seule
       autre exception : le lien de connexion de secours, envoyé uniquement à l'adresse personnelle du propriétaire
       (andrew@v2agroup.com, fixée dans la configuration et jamais saisie sur la page) lorsqu'il le demande. Aucun
       autre e-mail n'est envoyé par Cresus.</li>
@@ -55,8 +59,9 @@ connecter.</p>
       sauvegarde chiffrée.</li>
   <li>Les soldes et opérations des comptes bancaires Qonto des sociétés du propriétaire (date,
       montant, libellé, catégorie), en lecture seule, afin de suivre la trésorerie. Cresus ne peut
-      effectuer aucun paiement ni virement ; les IBAN et clés d'accès ne sont jamais transmis à
-      l'intelligence artificielle. Pour les autres comptes (Crédit Agricole, Revolut), le propriétaire
+      effectuer aucun paiement ni virement ; les IBAN, numéros de carte, codes de vérification et clés d'accès
+      sont masqués avant toute transmission à l'intelligence artificielle (dans les e-mails et les documents
+      aussi). Pour les autres comptes (Crédit Agricole, Revolut), le propriétaire
       peut autoriser, auprès de sa banque, un accès en lecture seule via le prestataire agréé Enable Banking,
       pour une durée limitée et révocable ; à défaut, il envoie lui-même ses relevés (fichiers). Seuls le
       solde, la date, le montant et le libellé des opérations sont conservés. Ces opérations servent aussi à
@@ -65,6 +70,12 @@ connecter.</p>
   <li>Le registre des dettes, créances et comptes courants que le propriétaire tient avec Cresus. À sa
       demande, Cresus prépare des brouillons de relance pour les personnes qui lui doivent de l'argent ; ces
       brouillons ne sont envoyés que par le propriétaire lui-même.</li>
+  <li>L'Équipe : des assistants spécialisés (finances, comptabilité, fiscalité, juridique, organisation,
+      qualité de l'application), tous animés par le même modèle d'intelligence artificielle, répondent aux
+      questions du propriétaire dans leur domaine, à partir des données ci-dessus. Certains peuvent consulter des
+      sites officiels publics (Légifrance, BOFiP, service-public.fr…) ; aucune donnée personnelle n'est envoyée à ces
+      sites. Chaque assistant garde l'historique de ses réponses et un dossier permanent dont chaque élément a été
+      validé par le propriétaire. Les assistants conseillent seulement : ils n'agissent pas et n'envoient rien.</li>
 </ul>
 
 <h2>3. Utilisation des données</h2>
@@ -84,7 +95,7 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
   <li>Services de notification des navigateurs (Google pour Chrome et Android, Microsoft pour Edge) : ils
       acheminent les notifications de l'application installée vers les appareils du propriétaire. Le contenu est
       chiffré de bout en bout pour chaque appareil : ces services le transportent sans pouvoir le lire.</li>
-  <li>Microsoft (OneDrive) : stockage, dans le compte du propriétaire, d'une copie de sauvegarde hebdomadaire
+  <li>Microsoft (OneDrive) : stockage, dans le compte du propriétaire, d'une copie de sauvegarde quotidienne
       chiffrée de la mémoire de Cresus ; Microsoft ne peut pas la lire.</li>
 </ul>
 
@@ -101,14 +112,20 @@ le téléphone et l'ordinateur du propriétaire) n'est accessible qu'au proprié
 avec une clé d'accès propre à chacun de ses appareils (empreinte ou Windows Hello : la clé secrète ne quitte jamais
 l'appareil, le serveur n'en garde que la partie publique), ou par un lien personnel à usage unique valable 5 minutes.
 Chaque connexion ouvre une session de 30 jours au plus, révocable à tout moment, appareil par appareil ; les essais
-sont limités à 5 par heure, et chaque nouvelle connexion est signalée au propriétaire. Après une absence (délai choisi par le
+sont limités à 5 par heure et par adresse, et chaque nouvelle connexion est signalée au propriétaire. Après une absence (délai choisi par le
 propriétaire), l'application se verrouille : le serveur ne rend plus aucune donnée tant que la clé d'accès n'a pas
 été présentée de nouveau. L'application peut garder
 sur l'appareil une copie des dernières données affichées, pour une consultation hors connexion ; elle est effacée
 à la déconnexion. Le serveur est protégé par un accès par clé, un pare-feu et des
-mises à jour de sécurité automatiques. Chaque semaine, une copie de la mémoire de Cresus, chiffrée, est déposée
-dans le OneDrive du propriétaire (huit semaines conservées) ; la clé de déchiffrement reste sur le serveur et chez
-le propriétaire.</p>
+mises à jour de sécurité automatiques. Chaque nuit, une copie de la mémoire de Cresus, chiffrée, est déposée
+dans le OneDrive du propriétaire (les 14 dernières nuits et une par semaine sur huit semaines sont conservées) ; les copies faites à la demande du propriétaire sont
+chiffrées de la même façon. La clé de déchiffrement reste sur le serveur et chez le propriétaire. Quand le
+propriétaire remet une sauvegarde en place, elle est déchiffrée en mémoire sur son ordinateur (jamais écrite sur
+son disque) puis envoyée au serveur par une connexion chiffrée ; la mémoire remplacée (et une sauvegarde refusée
+parce qu'elle ne démarrait pas) est gardée sur le serveur au moins 30 jours, au cas où (les deux copies les plus
+récentes restent jusqu'à la restauration suivante). Les sessions des appareils ne sont pas
+restaurées : chaque appareil se reconnecte. Une ancienne clé de sauvegarde remplacée reste sur le serveur, car elle
+seule ouvre les sauvegardes faites avec elle.</p>
 
 <h2>6. Données des API Google</h2>
 <p>L'utilisation et le transfert vers toute autre application des informations reçues des API Google
