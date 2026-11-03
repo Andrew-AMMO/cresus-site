@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : 3 novembre 2026 (rangement des e-mails à la seule demande du propriétaire — lu ou non lu, archivage, corbeille, « pas un spam » —, suivi des e-mails de personnes à traiter, nature des e-mails reconnue à leurs en-têtes ; précédemment : sauvegarde chiffrée chaque nuit et remise en place depuis l'ordinateur du propriétaire, masquage des numéros sensibles avant tout envoi à l'intelligence artificielle, assistants spécialisés de l'Équipe ; précédemment : application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
+<p>Dernière mise à jour : 3 novembre 2026 (lecture des e-mails dans l'application, mise en page d'origine isolée sans images distantes, réponses envoyées par le propriétaire lui-même avec sa clé d'accès à chaque envoi ; rangement des e-mails à la seule demande du propriétaire — lu ou non lu, archivage, corbeille, « pas un spam » —, suivi des e-mails de personnes à traiter, nature des e-mails reconnue à leurs en-têtes ; précédemment : sauvegarde chiffrée chaque nuit et remise en place depuis l'ordinateur du propriétaire, masquage des numéros sensibles avant tout envoi à l'intelligence artificielle, assistants spécialisés de l'Équipe ; précédemment : application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -53,8 +53,20 @@ connecter.</p>
       automatiquement que les factures dont le montant et le fournisseur figurent dans l'e-mail retrouvé ; une
       facture incertaine est d'abord montrée au propriétaire, qui décide. Le propriétaire peut désactiver cet envoi automatique à tout moment dans ses réglages. Seule
       autre exception : le lien de connexion de secours, envoyé uniquement à l'adresse personnelle du propriétaire
-      (andrew@v2agroup.com, fixée dans la configuration et jamais saisie sur la page) lorsqu'il le demande. Aucun
-      autre e-mail n'est envoyé par Cresus.</li>
+      (andrew@v2agroup.com, fixée dans la configuration et jamais saisie sur la page) lorsqu'il le demande. Enfin, les
+      réponses que le propriétaire écrit et envoie lui-même depuis l'application : chacune n'est envoyée qu'après sa
+      confirmation par sa clé d'accès (empreinte digitale ou Windows Hello) au moment de l'envoi, confirmation valable
+      pour ce seul texte et ces seuls destinataires, qui sont ceux du message auquel il répond (jamais choisis par
+      l'intelligence artificielle) ; vingt envois au plus par vingt-quatre heures ; chaque envoi est noté dans son
+      journal (destinataires et objet, sans le texte). Cresus n'envoie jamais de réponse de sa propre initiative, et
+      aucun autre e-mail n'est envoyé par Cresus.</li>
+  <li>Lorsque le propriétaire ouvre un e-mail dans l'application, la conversation est lue dans sa boîte à ce
+      moment-là pour lui être affichée ; elle n'est pas conservée (elle reste deux minutes au plus en mémoire, le temps
+      d'afficher sa mise en page d'origine). Cette mise en page est nettoyée puis affichée isolée : aucun script n'y
+      est exécuté et aucune image distante n'est chargée, si bien que l'expéditeur n'est pas averti de la lecture. Les
+      pièces jointes ne sont téléchargées que lorsque le propriétaire le demande, directement sur son appareil, sans
+      être conservées par Cresus. S'il demande à Cresus de préparer sa réponse, la conversation est transmise à
+      l'intelligence artificielle pour rédiger ce premier jet, qu'il relit avant tout envoi.</li>
   <li>Les messages Google Chat des comptes professionnels du propriétaire (auteur, date, texte), en lecture
       seule, afin de lui résumer les échanges avec ses équipes et les demandes qui l'attendent. Ces messages ne
       sont pas conservés : ils sont lus au moment du résumé. Cresus n'envoie aucun message.</li>
