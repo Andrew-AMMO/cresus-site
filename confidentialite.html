@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Cresus — Politique de confidentialité</h1>
-<p>Dernière mise à jour : 1er novembre 2026 (sauvegarde chiffrée chaque nuit et remise en place depuis l'ordinateur du propriétaire, masquage des numéros sensibles avant tout envoi à l'intelligence artificielle, assistants spécialisés de l'Équipe ; précédemment : application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
+<p>Dernière mise à jour : 3 novembre 2026 (rangement des e-mails à la seule demande du propriétaire — lu ou non lu, archivage, corbeille, « pas un spam » —, suivi des e-mails de personnes à traiter, nature des e-mails reconnue à leurs en-têtes ; précédemment : sauvegarde chiffrée chaque nuit et remise en place depuis l'ordinateur du propriétaire, masquage des numéros sensibles avant tout envoi à l'intelligence artificielle, assistants spécialisés de l'Équipe ; précédemment : application installable, notifications chiffrées, connexion par clé d'accès ou lien envoyé à l'adresse du propriétaire, budget et abonnements, relances de créances, créneaux de travail, envoi des justificatifs au comptable).</p>
 
 <h2>1. Objet</h2>
 <p>Cresus est un assistant personnel privé, développé et utilisé exclusivement par Andrew Duchenne
@@ -25,6 +25,13 @@ connecter.</p>
   <li>Les e-mails reçus sur les comptes Gmail de leur propriétaire (expéditeur, objet, date, contenu),
       afin d'en produire des résumés, d'identifier les priorités et les tâches, de lui afficher ses e-mails
       non lus dans son tableau de bord et d'y faire les recherches qu'il demande.</li>
+  <li>Le rangement des e-mails, uniquement à la demande du propriétaire, depuis son tableau de bord : marquer comme
+      lu ou non lu, archiver, mettre à la corbeille (récupérable 30 jours dans Gmail), sortir un e-mail des spams. Cresus
+      ne supprime jamais définitivement un e-mail (la permission accordée ne le permet pas). Pour distinguer les personnes
+      des envois automatiques (newsletters, notifications, factures), Cresus lit l'expéditeur, l'objet et des en-têtes
+      techniques (lien de désabonnement, envoi automatique, contrôle d'authenticité) ; seuls les cas douteux sont
+      soumis à l'intelligence artificielle (expéditeur, objet et 200 premiers caractères). Il signale au propriétaire
+      les e-mails tombés dans ses spams dont l'expéditeur lui est connu, sans en lire le contenu.</li>
   <li>Les brouillons de réponse, que Cresus peut créer à la demande du propriétaire.
       Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même. Cresus
       n'envoie que deux sortes d'e-mails, décrites plus bas : les justificatifs destinés au comptable et le lien
@@ -102,7 +109,8 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
 <h2>5. Conservation et sécurité</h2>
 <p>Les e-mails ne sont pas archivés. Seuls les e-mails auxquels le propriétaire peut vouloir répondre
 sont conservés temporairement, 14 jours au maximum, le temps de préparer la réponse ; ils sont
-ensuite supprimés automatiquement. Les opérations bancaires sont conservées sur le serveur pour
+ensuite supprimés automatiquement. La liste des e-mails de personnes à traiter (expéditeur, objet, extrait de quelques
+lignes) est gardée jusqu'à leur traitement, puis 30 jours ; jamais plus de 60 jours après leur arrivée. Les opérations bancaires sont conservées sur le serveur pour
 établir les synthèses mensuelles. Les résumés produits par Cresus (briefings, résumés de conversations) ne
 sont conservés que 14 jours ; le texte des brouillons de réponse est effacé après 30 jours. Le fil de
 la conversation avec Cresus (Telegram et tableau de bord) ne garde que les 150 derniers messages ; pour la continuité de
