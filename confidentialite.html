@@ -30,7 +30,9 @@ connecter.</p>
       ne supprime jamais définitivement un e-mail (la permission accordée ne le permet pas). Pour distinguer les personnes
       des envois automatiques (newsletters, notifications, factures), Cresus lit l'expéditeur, l'objet et des en-têtes
       techniques (lien de désabonnement, envoi automatique, contrôle d'authenticité) ; seuls les cas douteux sont
-      soumis à l'intelligence artificielle (expéditeur, objet et 200 premiers caractères). Il signale au propriétaire
+      soumis à l'intelligence artificielle (expéditeur, objet et 200 premiers caractères). Pour les e-mails écrits par une
+      personne, l'intelligence artificielle reçoit l'expéditeur, l'objet et les 300 premiers caractères, afin de savoir
+      s'ils attendent quelque chose du propriétaire (une réponse, une décision, un document). Il signale au propriétaire
       les e-mails tombés dans ses spams dont l'expéditeur lui est connu, sans en lire le contenu.</li>
   <li>Les brouillons de réponse, que Cresus peut créer à la demande du propriétaire.
       Cresus n'envoie pas ces réponses : l'envoi est toujours effectué par le propriétaire lui-même. Cresus
@@ -110,7 +112,8 @@ l'exception des sous-traitants techniques ci-dessous, strictement nécessaires a
 <p>Les e-mails ne sont pas archivés. Seuls les e-mails auxquels le propriétaire peut vouloir répondre
 sont conservés temporairement, 14 jours au maximum, le temps de préparer la réponse ; ils sont
 ensuite supprimés automatiquement. La liste des e-mails de personnes à traiter (expéditeur, objet, extrait de quelques
-lignes) est gardée jusqu'à leur traitement, puis 30 jours ; jamais plus de 60 jours après leur arrivée. Les opérations bancaires sont conservées sur le serveur pour
+lignes, et ce qu'ils attendent de lui) est gardée jusqu'à leur traitement, puis 30 jours ; jamais plus de 60 jours après
+leur arrivée. Les opérations bancaires sont conservées sur le serveur pour
 établir les synthèses mensuelles. Les résumés produits par Cresus (briefings, résumés de conversations) ne
 sont conservés que 14 jours ; le texte des brouillons de réponse est effacé après 30 jours. Le fil de
 la conversation avec Cresus (Telegram et tableau de bord) ne garde que les 150 derniers messages ; pour la continuité de
